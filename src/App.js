@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState,useEffect } from 'react'; // Use Hooks
+import Student from './Student/Student';
+import './CSS/Google_Font_Raleway.css';
+import './CSS/App.css'
 
 function App() {
+  const [isLoading,setIsLoading]=useState(true)
+  const [studentData,setStudentData]=useState([])
+  // Fetch Data using fetch()
+  useEffect(()=>{
+    fetch("https://api.hatchways.io/assessment/students")
+    .then(data=>data.json())
+    .then(data=>{
+      setStudentData(data)
+      setIsLoading(false)
+    })
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        { // Show Data, once become available
+          isLoading?"":<Student studentData={studentData.students}/>
+        }
     </div>
   );
 }

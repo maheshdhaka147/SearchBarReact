@@ -1,0 +1,109 @@
+.displaycontainer{
+  width: 60%;
+  margin-left:20%;
+  margin-right: 20%;
+  height:80%;
+  margin-top:5%;
+  position:absolute;
+  overflow: auto;
+  box-shadow: 1px 1px 1px 1px #CCC;
+  border-radius: 10px;
+}
+.studentdiv{
+  display: block;
+  float:left;
+  width:100%;
+  border-bottom:1px solid #CCC;
+  padding-bottom:20px;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+}
+.studentdisplaydiv{
+  width:100%;
+  margin-top:90px;
+}
+.leftdiv,.centerdiv{
+  float:left;
+}
+.paddingdiv{
+  padding-left:10px;
+}
+.rightdiv{
+  float:right;
+}
+
+.picstyle{
+  height:100px;
+  width:100px;
+  border-radius:50px;
+  border:1px solid #CCC;
+  margin:25px;
+}
+
+.searchdiv{
+  position: fixed;
+  width:60%;
+  height:90px;
+  background-color: #FFF;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  border-bottom:1px solid #333;
+}
+
+.searchbox{
+  width:96%;
+  height:40px;
+  border:none;
+  margin-bottom:5px;
+  padding-left:5px;
+  border-bottom: 1px solid #CCC;
+  margin-left:2%;
+  margin-right:2%;
+  font-size: 1em;
+}
+
+.plussign{
+  float: right;
+  margin-right: 10px;
+  font-size: 34px;
+  cursor: pointer;
+  font-weight: 100;
+  color:#666;
+  border:0px;
+  background-color: transparent;
+  margin-top:10px;
+}
+.minussign{
+  float: right;
+  margin-right: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  font-weight: 100;
+  color:#666;
+  border:0px;
+  background-color: transparent;
+  margin-top:-5px;
+}
+
+.displaynone{
+  display: none;
+}
+.tagdisplaydiv{
+  margin-bottom: 20px;
+}
+.tagstyle{
+  padding:4px 4px;
+  background-color: #CCC;
+  margin-right:10px;
+  border-radius:4px;
+}
+.searchtag{
+  height:40px;
+  border:none;
+  margin-bottom:5px;
+  padding-left:5px;
+  border-bottom: 1px solid #CCC;
+}
